@@ -10,6 +10,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>BestSellers.Touch</RootNamespace>
     <AssemblyName>BestSellersTouch</AssemblyName>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>
@@ -139,6 +141,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Views\BookView.xib" />
+    <None Include="Views\BookView.xib" />
   </ItemGroup>
 </Project>
