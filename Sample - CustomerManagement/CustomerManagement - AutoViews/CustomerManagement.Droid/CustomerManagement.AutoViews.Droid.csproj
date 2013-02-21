@@ -16,11 +16,11 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidSupportedAbis>armeabi%3bx86</AndroidSupportedAbis>
+    <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
     <DeployExternal>False</DeployExternal>
-    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +46,49 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cirrious.MvvmCross, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.DownloadCache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.File, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.PhoneCall, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.PhoneCall.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ResourceLoader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.ResourceLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.WebBrowser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Portable\Debug\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="CrossUI.Core">
+      <HintPath>..\..\..\bin\Portable\Debug\CrossUI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomerManagement.AutoViews.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CustomerManagement\bin\Debug\CustomerManagement.AutoViews.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
@@ -223,17 +266,9 @@
       <Project>{9599095A-50F9-468D-B39E-3D59F2193DE3}</Project>
       <Name>Cirrious.MvvmCross.AutoView.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross.AutoView\Cirrious.MvvmCross.AutoView.csproj">
-      <Project>{274CB946-75BB-4B04-982B-D053C59597AA}</Project>
-      <Name>Cirrious.MvvmCross.AutoView</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross.Binding.Droid\Cirrious.MvvmCross.Binding.Droid.csproj">
       <Project>{47FD89C3-19DC-4BD2-9B6D-FB8363BE7EB9}</Project>
       <Name>Cirrious.MvvmCross.Binding.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross.Binding\Cirrious.MvvmCross.Binding.csproj">
-      <Project>{64DCD397-9019-41E8-A928-E5F5C5DF185B}</Project>
-      <Name>Cirrious.MvvmCross.Binding</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross.Dialog.Droid\Cirrious.MvvmCross.Dialog.Droid.csproj">
       <Project>{D56E4F48-6ECC-4481-9948-078F620881F3}</Project>
@@ -243,57 +278,25 @@
       <Project>{7A6BE137-D0F1-46A1-AE5C-81FAEEDDDF02}</Project>
       <Name>Cirrious.MvvmCross.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross.Localisation\Cirrious.MvvmCross.Localization.csproj">
-      <Project>{D89351C1-D48F-4AD0-A0B9-353A93425AB7}</Project>
-      <Name>Cirrious.MvvmCross.Localization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Cirrious.MvvmCross\Cirrious.MvvmCross.csproj">
-      <Project>{B6E27475-E7D0-448C-A5CC-5097DCA1E2DD}</Project>
-      <Name>Cirrious.MvvmCross</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Plugins\DownloadCache\Cirrious.MvvmCross.Plugins.DownloadCache.Droid\Cirrious.MvvmCross.Plugins.DownloadCache.Droid.csproj">
       <Project>{81A58551-7D1C-4687-A5A5-C73EB5F15563}</Project>
       <Name>Cirrious.MvvmCross.Plugins.DownloadCache.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\DownloadCache\Cirrious.MvvmCross.Plugins.DownloadCache\Cirrious.MvvmCross.Plugins.DownloadCache.csproj">
-      <Project>{60A80EB8-2056-4771-8600-03A8DA417CFB}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.DownloadCache</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Plugins\File\Cirrious.MvvmCross.Plugins.File.Droid\Cirrious.MvvmCross.Plugins.File.Droid.csproj">
       <Project>{EE2D94C9-032E-4EBE-B3D5-6A585D03F188}</Project>
       <Name>Cirrious.MvvmCross.Plugins.File.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\File\Cirrious.MvvmCross.Plugins.File\Cirrious.MvvmCross.Plugins.File.csproj">
-      <Project>{19EE04D6-7EE0-4FE8-AB10-4623D93F165A}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.File</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\Json\Cirrious.MvvmCross.Plugins.Json\Cirrious.MvvmCross.Plugins.Json.csproj">
-      <Project>{D518E8E6-3CE6-4706-A286-E8BC6A2F64DC}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.Json</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Plugins\PhoneCall\Cirrious.MvvmCross.Plugins.PhoneCall.Droid\Cirrious.MvvmCross.Plugins.PhoneCall.Droid.csproj">
       <Project>{3509366C-414C-4555-BCAE-5DB7A2ACCA72}</Project>
       <Name>Cirrious.MvvmCross.Plugins.PhoneCall.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\PhoneCall\Cirrious.MvvmCross.Plugins.PhoneCall\Cirrious.MvvmCross.Plugins.PhoneCall.csproj">
-      <Project>{97C01AFB-C43A-4B75-A456-079706A2F888}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.PhoneCall</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Plugins\ResourceLoader\Cirrious.MvvmCross.Plugins.ResourceLoader.Droid\Cirrious.MvvmCross.Plugins.ResourceLoader.Droid.csproj">
       <Project>{65DA5A26-5D2B-4237-84D5-38265100F7CC}</Project>
       <Name>Cirrious.MvvmCross.Plugins.ResourceLoader.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\ResourceLoader\Cirrious.MvvmCross.Plugins.ResourceLoader\Cirrious.MvvmCross.Plugins.ResourceLoader.csproj">
-      <Project>{75CA1824-C7F3-4827-93ED-E75B2C01CB2C}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.ResourceLoader</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Cirrious\Plugins\WebBrowser\Cirrious.MvvmCross.Plugins.WebBrowser.Droid\Cirrious.MvvmCross.Plugins.WebBrowser.Droid.csproj">
       <Project>{94EF5795-5912-4B3B-B255-63A6FEC10F0D}</Project>
       <Name>Cirrious.MvvmCross.Plugins.WebBrowser.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Cirrious\Plugins\WebBrowser\Cirrious.MvvmCross.Plugins.WebBrowser\Cirrious.MvvmCross.Plugins.WebBrowser.csproj">
-      <Project>{4DD71F8B-40DF-4DC3-84B5-7A76722F1C67}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.WebBrowser</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\PortableSupport\System.Net\System.Net.Droid.csproj">
       <Project>{EB2591F7-1492-4885-AD59-D11D2311BBC7}</Project>
@@ -310,14 +313,6 @@
     <ProjectReference Include="..\..\..\CrossUI\CrossUI.Droid\CrossUI.Droid.csproj">
       <Project>{33044C7B-47A4-4113-A61A-EB429407F818}</Project>
       <Name>CrossUI.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\CrossUI\CrossUI.Core\CrossUI.Core.csproj">
-      <Project>{D9CBBFFE-57E8-4E97-9E16-C34BC4C52827}</Project>
-      <Name>CrossUI.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CustomerManagement\CustomerManagement.AutoViews.Core.csproj">
-      <Project>{46E24189-DA98-4CEC-BD5E-F15480C78355}</Project>
-      <Name>CustomerManagement.AutoViews.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
